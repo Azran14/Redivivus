@@ -1,0 +1,44 @@
+header {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  font-family: Raleway, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  height: 10vh;
+  background-color: #1e2022;
+}
+
+.header__menu {
+  margin-top: 3vh;
+  width: 55vw;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  ul {
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.header__icons {
+  display: flex;
+  justify-content: space-between;
+  width: 6vw;
+  margin-right: 5vw;
+  margin-top: 2.5vh;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+}
+
+.logoDesktop {
+  margin-left: 3.5vw;
+  margin-top: 1.5vh;
+}

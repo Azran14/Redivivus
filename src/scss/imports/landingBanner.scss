@@ -1,0 +1,80 @@
+.background {
+  height: 700vh;
+  background-image: url(../img/background.png);
+}
+
+.landingPage {
+  margin-top: 10vh;
+  background-size: cover;
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.landingPage__phenix {
+  padding-top: 30vh;
+  padding-left: 10vw;
+  font-family: Raleway, sans-serif;
+  font-weight: bolder;
+  font-size: 22px;
+}
+
+.landingPage__phenix--smaller {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landingPage__phenix--smaller {
+  color: #eeeeee;
+}
+
+.landingPage__phenix--bigger {
+  font-size: 36px;
+  h1 {
+    color: #eeeeee;
+  }
+}
+
+.landingPage__carrousel {
+  /*carrousel to do*/
+  img {
+    /*to change when carrousel is done*/
+    height: 300px;
+    margin-top: 20vh;
+  }
+}
+
+.landingPage__unique {
+  padding-top: 34vh;
+  padding-right: 10vw;
+  font-family: Raleway, sans-serif;
+  font-weight: bolder;
+  font-size: 22px;
+  div p {
+    color: #1e2022;
+  }
+}
+
+.landingPage__unique--bigger {
+  font-size: 36px;
+  h1 {
+    color: #1e2022;
+  }
+}
+
+.degrading {
+  position: absolute;
+  width: 100vw;
+  height: 8vh;
+  top: 92vh;
+
+  background: linear-gradient(
+    180deg,
+    rgba(238, 238, 238, 0) 0%,
+    rgba(244, 231, 214, 0.21) 22.4%,
+    #f4e7d6 78.12%
+  );
+}
