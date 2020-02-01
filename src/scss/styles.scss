@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import "imports/reset.scss";
 @import "imports/header.scss";
 @import "imports/landingBanner.scss";
-* {
-  color: white;
-  margin: 0;
-}

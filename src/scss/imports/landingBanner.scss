@@ -1,10 +1,11 @@
 .background {
   height: 700vh;
-  background-image: url(../img/background.png);
+  background-image: url(../img/background2.png);
 }
 
 .landingPage {
   margin-top: 10vh;
+  width: 100%; /*tester avec vw*/
   background-size: cover;
   background-image: url(../img/background.png);
   background-repeat: no-repeat;
@@ -39,11 +40,11 @@
 }
 
 .landingPage__carrousel {
-  /*carrousel to do*/
+  /*carrousel à faire*/
   img {
-    /*to change when carrousel is done*/
-    height: 300px;
-    margin-top: 20vh;
+    /*à changer quand le carrousel est fait*/
+    height: 400px;
+    margin-top: 10vh;
   }
 }
 
@@ -67,9 +68,10 @@
 
 .degrading {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 8vh;
   top: 92vh;
+  left: 0;
 
   background: linear-gradient(
     180deg,
