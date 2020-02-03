@@ -49,6 +49,7 @@
   }
 
   p {
+    margin-top: 20px;
     font-size: 14px;
     font-weight: bolder;
   }
@@ -57,6 +58,7 @@
 .landingPage__textiles {
   height: 20vh;
   margin-top: 5vh;
+  margin-bottom: 120px;
   font-weight: normal;
   font-size: 16px;
   color: #1e2022;
@@ -70,8 +72,10 @@
   }
 }
 
-.landingPage__button {
-  margin-top: 60px;
+.button {
+  position: absolute;
+  margin-top: 70vh;
+
   button {
     font-family: Raleway, sans-serif;
     font-weight: bold;
@@ -89,7 +93,6 @@
   height: 8vh;
   top: 92vh;
   left: 0;
-
   background: linear-gradient(
     180deg,
     rgba(238, 238, 238, 0) 0%,
@@ -105,7 +108,7 @@ $ani-delay: 1s;
 .arrow {
   opacity: 0;
   position: absolute;
-  left: 50%;
+  left: 48.8%;
   top: 95%;
   transform-origin: 95% 95%;
   transform: translate3d(-95%, -95%, 0);

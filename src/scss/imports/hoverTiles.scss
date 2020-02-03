@@ -1,8 +1,7 @@
 .hoverTiles {
   margin-left: auto;
   margin-right: auto;
-  font-weight: bolder;
-  font-size: 80px;
+  font-size: 96px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,6 +11,71 @@
 }
 
 .hoverTiles__phenix {
+  margin-top: 20px;
+  position: relative;
   background-image: url("../img/collection.png");
-  text-justify: center;
+  color: #eeeeee;
+  p {
+    font-weight: bolder;
+    padding: 24vh;
+  }
+  div {
+    display: none;
+  }
+  img {
+    display: none;
+  }
+}
+
+.hoverTiles__phenix:hover {
+  background-color: #000000;
+  background-image: none;
+  font-size: 45px;
+  align-items: flex-start;
+
+  p {
+    padding: 5vh;
+  }
+
+  div {
+    display: block;
+    font-size: 20px;
+    width: 40vw;
+    font-weight: thin;
+    padding: 10px;
+    margin-left: 40px;
+    line-height: 48px;
+  }
+
+  .button {
+    margin-top: 50vh;
+    margin-left: 10vw;
+  }
+
+  .collectionBg {
+    display: block;
+    position: absolute;
+    width: 48.5vw;
+    height: 32.5vh;
+    right: 0;
+    top: 0;
+  }
+
+  .jackets {
+    padding: 0;
+    background-color: #eeeeee;
+    width: 48.5vw;
+    height: 32.5vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img {
+      height: 175px;
+      width: auto;
+      display: block;
+    }
+  }
 }
