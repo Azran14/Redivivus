@@ -1,0 +1,25 @@
+html {
+  overflow-y: hidden;
+}
+.backgroundPerso {
+  position: relative;
+  background-image: url("../img/bgPersoDesktop.png");
+  height: 90vh;
+  background-repeat: no-repeat;
+  margin-top: 10vh;
+  width: 100%;
+  background-size: cover;
+  z-index: -1;
+}
+.mainContent__text {
+  position: relative;
+  top: 10vh;
+  left: 10vw;
+  p {
+    font-size: 30px;
+    color: white;
+  }
+  b {
+    font-size: 34px;
+  }
+}
