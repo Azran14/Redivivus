@@ -1,0 +1,17 @@
+.hoverTiles {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bolder;
+  font-size: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 97vw;
+  height: 65vh;
+  background-size: cover;
+}
+
+.hoverTiles__phenix {
+  background-image: url("../img/collection.png");
+  text-justify: center;
+}
