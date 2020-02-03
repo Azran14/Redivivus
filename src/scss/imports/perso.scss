@@ -2,7 +2,6 @@ html {
   overflow-y: hidden;
 }
 .backgroundPerso {
-  position: relative;
   background-image: url("../img/bgPersoDesktop.png");
   height: 90vh;
   background-repeat: no-repeat;
@@ -13,6 +12,7 @@ html {
 }
 .mainContent__text {
   position: relative;
+  width: 70vw;
   top: 10vh;
   left: 10vw;
   p {
@@ -22,4 +22,10 @@ html {
   b {
     font-size: 34px;
   }
+}
+
+.mainContent__choice {
+  margin-top: 15vh;
+  display: flex;
+  justify-content: space-around;
 }
