@@ -97,17 +97,17 @@
 .landingPage__textiles {
   height: 20vh;
   margin-top: 5vh;
-  margin-bottom: 120px;
+  margin-bottom: 150px;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 24px;
   color: #1e2022;
   white-space: pre-line;
 
   span {
     font-weight: bolder;
     span {
-      font-size: 22px;
-      line-height: 48px;
+      font-size: 32px;
+      line-height: 60px;
     }
   }
 }
@@ -136,6 +136,13 @@
 .button--reverse {
   button:hover {
     background-color: black;
+    color: white;
+  }
+}
+
+.button--remove {
+  button:hover {
+    background-color: rgba($color: #000000, $alpha: 0);
     color: white;
   }
 }
