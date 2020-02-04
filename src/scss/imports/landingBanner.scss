@@ -184,3 +184,22 @@ $ani-delay: 1s;
     opacity: 0;
   }
 }
+.hoverTiles__text {
+  color: white;
+  background-color: #1e2022;
+  width: 97vw;
+  height: 6vh;
+  display: flex;
+  margin-top: 1.5vh;
+  p {
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+  }
+}
+.hoverTiles__textile {
+  margin-top: 1.5vh;
+}
+.hoverTiles__similiCuir {
+  background-image: url(../img/simili-cuir.png);
+}
