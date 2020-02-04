@@ -1,4 +1,5 @@
 .hoverTiles {
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   font-size: 96px;
@@ -11,18 +12,30 @@
 }
 
 .hoverTiles__phenix {
-  margin-top: 20px;
+  margin-top: 0;
   position: relative;
   background-image: url("../img/collection.png");
   color: #eeeeee;
+  transition: transform 0.5s;
   p {
     font-weight: bolder;
     padding: 24vh;
+    padding-bottom: 0;
+  }
+  .titlephenix--h {
+    transform: rotateY(180deg);
+    margin-left: 100px;
+    display: none;
   }
   div {
     display: none;
+    transform: rotateY(180deg);
   }
   img {
+    display: none;
+    transform: rotateY(180deg);
+  }
+  .button {
     display: none;
   }
 }
@@ -33,23 +46,42 @@
   font-size: 45px;
   align-items: flex-start;
 
+  .leftside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titlephenix {
+    display: none;
+  }
+  .titlephenix--h {
+    display: block;
+  }
   p {
     padding: 5vh;
   }
 
   div {
     display: block;
-    font-size: 20px;
+    font-size: 16px;
     width: 40vw;
     font-weight: thin;
     padding: 10px;
     margin-left: 40px;
-    line-height: 48px;
+    line-height: 32px;
+    flex-grow: 1;
+    text-align: center;
+    text-justify: distribute;
   }
 
   .button {
-    margin-top: 50vh;
-    margin-left: 10vw;
+    position: relative;
+    bottom: 0;
+    button {
+      top: auto;
+      position: relative;
+    }
   }
 
   .collectionBg {
@@ -59,6 +91,12 @@
     height: 32.5vh;
     right: 0;
     top: 0;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+  }
+
+  .collectionBg:hover {
+    opacity: 1;
   }
 
   .jackets {
@@ -76,6 +114,9 @@
       height: 175px;
       width: auto;
       display: block;
+    }
+    :hover {
+      transform: scale(1.3);
     }
   }
 }
