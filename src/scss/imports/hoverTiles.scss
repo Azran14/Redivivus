@@ -24,7 +24,7 @@
     font-weight: bolder;
     padding: 24vh;
   }
-  .titlephenixh {
+  .titlephenix--h {
     transform: rotateY(180deg);
     margin-left: 100px;
     display: none;
@@ -50,7 +50,7 @@
   .titlephenix {
     display: none;
   }
-  .titlephenixh {
+  .titlephenix--h {
     display: block;
   }
   p {
@@ -83,6 +83,12 @@
     height: 32.5vh;
     right: 0;
     top: 0;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+  }
+
+  .collectionBg:hover {
+    opacity: 1;
   }
 
   .jackets {
