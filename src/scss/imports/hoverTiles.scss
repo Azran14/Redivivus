@@ -11,10 +11,6 @@
   background-size: cover;
 }
 
-.hoverTiles:hover .hoverTiles__phenix {
-  transform: rotateY(180deg);
-}
-
 .hoverTiles__phenix {
   margin-top: 0;
   position: relative;
@@ -24,6 +20,7 @@
   p {
     font-weight: bolder;
     padding: 24vh;
+    padding-bottom: 0;
   }
   .titlephenix--h {
     transform: rotateY(180deg);
@@ -48,6 +45,13 @@
   background-image: none;
   font-size: 45px;
   align-items: flex-start;
+
+  .leftside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .titlephenix {
     display: none;
   }
@@ -66,15 +70,18 @@
     padding: 10px;
     margin-left: 40px;
     line-height: 32px;
+    flex-grow: 1;
+    text-align: center;
+    text-justify: distribute;
   }
 
   .button {
     position: relative;
+    bottom: 0;
     button {
-      position: absolute;
-      top: 3vh;
+      top: auto;
+      position: relative;
     }
-    margin-left: 3vw;
   }
 
   .collectionBg {
