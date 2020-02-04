@@ -10,19 +10,32 @@
   background-size: cover;
 }
 
+.hoverTiles:hover .hoverTiles__phenix {
+  transform: rotateY(180deg);
+}
+
 .hoverTiles__phenix {
   margin-top: 20px;
   position: relative;
   background-image: url("../img/collection.png");
   color: #eeeeee;
+  transition: transform 0.5s;
   p {
     font-weight: bolder;
     padding: 24vh;
   }
+  .titlephenixh {
+    transform: rotateY(180deg);
+  }
   div {
     display: none;
+    transform: rotateY(180deg);
   }
   img {
+    display: none;
+    transform: rotateY(180deg);
+  }
+  .button {
     display: none;
   }
 }
@@ -32,7 +45,9 @@
   background-image: none;
   font-size: 45px;
   align-items: flex-start;
-
+  .titlephenix {
+    display: none;
+  }
   p {
     padding: 5vh;
   }
@@ -53,7 +68,7 @@
       position: absolute;
       top: 3vh;
     }
-    margin-left: 10vw;
+    margin-left: 3vw;
   }
 
   .collectionBg {
