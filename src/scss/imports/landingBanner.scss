@@ -27,7 +27,6 @@
 }
 
 .landingPage__phenix {
-  // margin-top: 5vh;
   height: 5vh;
   font-weight: bolder;
   font-size: 40px;
@@ -40,11 +39,10 @@
 }
 
 .landingPage__jackets {
-  z-index: 1;
+  display: flex;
   height: 250px;
-  // margin-top: 60px;
-  flex-direction: row;
-  justify-content: space-around;
+  width: 70%;
+  justify-content: space-between;
   div {
     display: flex;
     flex-direction: column;
@@ -105,12 +103,14 @@
   color: #1e2022;
   white-space: pre-line;
   height: 10vh;
-
-  span {
-    font-weight: bolder;
+  margin-bottom: 6vh;
+  p {
     span {
-      font-size: 32px;
-      line-height: 60px;
+      font-weight: bolder;
+      span {
+        font-size: 32px;
+        line-height: 60px;
+      }
     }
   }
 }
@@ -142,10 +142,10 @@ $ani-delay: 1s;
   transform: translate3d(-95%, -95%, 0);
 }
 
-.arrow-first {
+.arrow--first {
   animation: arrow-movement $ani-speed ease-in-out infinite;
 }
-.arrow-second {
+.arrow--second {
   animation: arrow-movement $ani-speed $ani-delay ease-in-out infinite;
 }
 
@@ -183,23 +183,4 @@ $ani-delay: 1s;
   100% {
     opacity: 0;
   }
-}
-.hoverTiles__text {
-  color: white;
-  background-color: #1e2022;
-  width: 97vw;
-  height: 6vh;
-  display: flex;
-  margin-top: 1.5vh;
-  p {
-    font-size: 30px;
-    font-family: "Raleway", sans-serif;
-    font-weight: bold;
-  }
-}
-.hoverTiles__textile {
-  margin-top: 1.5vh;
-}
-.hoverTiles__similiCuir {
-  background-image: url(../img/simili-cuir.png);
 }
