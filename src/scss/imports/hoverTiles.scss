@@ -6,8 +6,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 97vw;
-  height: 65vh;
   background-size: cover;
   h3 {
     color: white;
@@ -26,7 +24,6 @@
   transition: transform 0.5s;
 
   .titlephenix {
-    padding-top: 26vh;
     font-weight: bolder;
     padding-bottom: 0;
   }
@@ -45,6 +42,9 @@
     display: none;
   }
   .hoverTiles__phenixBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     width: 97vw;
     height: 65vh;
@@ -141,6 +141,9 @@
   height: 6vh;
   display: flex;
   margin-top: 1.5vh;
+  align-items: center;
+  justify-content: center;
+
   h3 {
     font-size: 30px;
     font-family: "Raleway", sans-serif;
@@ -149,6 +152,9 @@
 }
 .hoverTiles__textile {
   margin-top: 1.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .hoverTiles__similiCuir {
   background-image: url(../img/simili-cuir.png);
