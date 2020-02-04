@@ -9,6 +9,11 @@
   width: 97vw;
   height: 65vh;
   background-size: cover;
+  h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 96px;
+  }
 }
 
 .hoverTiles__phenix {
@@ -19,6 +24,7 @@
   background-size: cover;
   color: #eeeeee;
   transition: transform 0.5s;
+
   .titlephenix {
     padding-top: 26vh;
     font-weight: bolder;
@@ -65,7 +71,7 @@
     display: block;
     font-size: 34px;
   }
-  p {
+  h3 {
     padding: 5vh;
   }
 
@@ -135,7 +141,7 @@
   height: 6vh;
   display: flex;
   margin-top: 1.5vh;
-  p {
+  h3 {
     font-size: 30px;
     font-family: "Raleway", sans-serif;
     font-weight: bold;

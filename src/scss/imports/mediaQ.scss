@@ -1,0 +1,23 @@
+.headerContent {
+  display: none;
+}
+.mobile {
+  display: none;
+  margin: 0;
+}
+@media screen and (max-width: 720px) {
+  .mobile {
+    display: flex;
+  }
+  .headerContent {
+    display: none;
+  }
+}
+@media screen and (min-width: 720px) {
+  .mobile {
+    display: none;
+  }
+  .headerContent {
+    display: flex;
+  }
+}
