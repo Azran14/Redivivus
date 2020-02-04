@@ -39,16 +39,20 @@
 
   div {
     display: block;
-    font-size: 20px;
+    font-size: 16px;
     width: 40vw;
     font-weight: thin;
     padding: 10px;
     margin-left: 40px;
-    line-height: 48px;
+    line-height: 32px;
   }
 
   .button {
-    margin-top: 50vh;
+    position: relative;
+    button {
+      position: absolute;
+      top: 3vh;
+    }
     margin-left: 10vw;
   }
 
