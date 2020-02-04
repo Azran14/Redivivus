@@ -9,6 +9,11 @@
   width: 97vw;
   height: 65vh;
   background-size: cover;
+  h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 96px;
+  }
 }
 
 .hoverTiles__phenix {
@@ -17,7 +22,7 @@
   background-image: url("../img/collection.png");
   color: #eeeeee;
   transition: transform 0.5s;
-  p {
+  h3 {
     font-weight: bolder;
     padding: 24vh;
     padding-bottom: 0;
@@ -57,8 +62,9 @@
   }
   .titlephenix--h {
     display: block;
+    font-size: 45px;
   }
-  p {
+  h3 {
     padding: 5vh;
   }
 
@@ -119,4 +125,28 @@
       transform: scale(1.3);
     }
   }
+}
+.hoverTiles__text {
+  color: white;
+  background-color: #1e2022;
+  width: 97vw;
+  height: 6vh;
+  display: flex;
+  margin-top: 1.5vh;
+  align-items: center;
+  justify-content: center;
+  h3 {
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+  }
+}
+.hoverTiles__textile {
+  display: flex;
+  margin-top: 1.5vh;
+  align-items: center;
+  justify-content: center;
+}
+.hoverTiles__similiCuir {
+  background-image: url(../img/simili-cuir.png);
 }
