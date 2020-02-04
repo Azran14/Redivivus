@@ -17,24 +17,25 @@
 }
 
 .hoverTiles__phenix {
-  margin-top: 0;
+  width: 97vw;
+  height: 65vh;
   position: relative;
   background-image: url("../img/collection.png");
+  background-size: cover;
   color: #eeeeee;
   transition: transform 0.5s;
-  h3 {
+
+  .titlephenix {
+    padding-top: 26vh;
     font-weight: bolder;
-    padding: 24vh;
     padding-bottom: 0;
   }
   .titlephenix--h {
-    transform: rotateY(180deg);
     margin-left: 100px;
     display: none;
   }
-  div {
+  .textphenix--h {
     display: none;
-    transform: rotateY(180deg);
   }
   img {
     display: none;
@@ -42,6 +43,11 @@
   }
   .button {
     display: none;
+  }
+  .hoverTiles__phenixBox {
+    text-align: center;
+    width: 97vw;
+    height: 65vh;
   }
 }
 
@@ -55,14 +61,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 65vh;
   }
 
-  .titlephenix {
+  .hoverTiles__phenixBox {
     display: none;
   }
   .titlephenix--h {
     display: block;
-    font-size: 45px;
+    font-size: 34px;
   }
   h3 {
     padding: 5vh;
@@ -126,6 +133,7 @@
     }
   }
 }
+
 .hoverTiles__text {
   color: white;
   background-color: #1e2022;
@@ -133,8 +141,6 @@
   height: 6vh;
   display: flex;
   margin-top: 1.5vh;
-  align-items: center;
-  justify-content: center;
   h3 {
     font-size: 30px;
     font-family: "Raleway", sans-serif;
@@ -142,11 +148,11 @@
   }
 }
 .hoverTiles__textile {
-  display: flex;
   margin-top: 1.5vh;
-  align-items: center;
-  justify-content: center;
 }
 .hoverTiles__similiCuir {
   background-image: url(../img/simili-cuir.png);
+  width: 97vw;
+  height: 65vh;
+  background-size: cover;
 }
