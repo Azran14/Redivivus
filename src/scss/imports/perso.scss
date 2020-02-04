@@ -37,15 +37,31 @@ html {
     color: white;
     font-size: 40px;
     font-weight: bolder;
-    margin-bottom: 40px;
+    margin-top: -50px;
   }
 }
-.mainContent {
-  img {
-    width: 700px;
-    height: 375px;
+.mainContent__choice:hover {
+  h3 {
+    display: block;
   }
-  img:hover {
-    filter: brightness(10%);
+  h2 {
+    display: none;
   }
+}
+
+.mainContent__car {
+  background-image: url(../img/choiceCar.png);
+  background-size: cover;
+  width: 700px;
+  height: 321px;
+}
+.mainContent__boat {
+  background-image: url(../img/choiceBoat.png);
+  background-size: cover;
+  width: 700px;
+  height: 321px;
+}
+.hoverContent {
+  display: flex;
+  color: white;
 }
