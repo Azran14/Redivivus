@@ -26,6 +26,8 @@
   }
   .titlephenixh {
     transform: rotateY(180deg);
+    margin-left: 100px;
+    display: none;
   }
   div {
     display: none;
@@ -47,6 +49,9 @@
   align-items: flex-start;
   .titlephenix {
     display: none;
+  }
+  .titlephenixh {
+    display: block;
   }
   p {
     padding: 5vh;
@@ -95,6 +100,9 @@
       height: 175px;
       width: auto;
       display: block;
+    }
+    :hover {
+      transform: scale(1.3);
     }
   }
 }
