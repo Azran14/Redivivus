@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700&display=swap");
 
 html {
+  overflow-x: hidden;
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
@@ -15,7 +16,6 @@ a:active {
 .button {
   button {
     position: relative;
-    top: -12vh;
     font-family: Raleway, sans-serif;
     font-weight: bold;
     font-size: 14px;
