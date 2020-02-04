@@ -11,19 +11,34 @@
   background-size: cover;
 }
 
+.hoverTiles:hover .hoverTiles__phenix {
+  transform: rotateY(180deg);
+}
+
 .hoverTiles__phenix {
   margin-top: 0;
   position: relative;
   background-image: url("../img/collection.png");
   color: #eeeeee;
+  transition: transform 0.5s;
   p {
     font-weight: bolder;
     padding: 24vh;
   }
-  div {
+  .titlephenix--h {
+    transform: rotateY(180deg);
+    margin-left: 100px;
     display: none;
   }
+  div {
+    display: none;
+    transform: rotateY(180deg);
+  }
   img {
+    display: none;
+    transform: rotateY(180deg);
+  }
+  .button {
     display: none;
   }
 }
@@ -33,7 +48,12 @@
   background-image: none;
   font-size: 45px;
   align-items: flex-start;
-
+  .titlephenix {
+    display: none;
+  }
+  .titlephenix--h {
+    display: block;
+  }
   p {
     padding: 5vh;
   }
@@ -54,7 +74,7 @@
       position: absolute;
       top: 3vh;
     }
-    margin-left: 10vw;
+    margin-left: 3vw;
   }
 
   .collectionBg {
@@ -64,6 +84,12 @@
     height: 32.5vh;
     right: 0;
     top: 0;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+  }
+
+  .collectionBg:hover {
+    opacity: 1;
   }
 
   .jackets {
@@ -81,6 +107,9 @@
       height: 175px;
       width: auto;
       display: block;
+    }
+    :hover {
+      transform: scale(1.3);
     }
   }
 }
