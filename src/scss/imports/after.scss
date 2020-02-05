@@ -16,6 +16,9 @@
   }
 }
 .choiceContent__jackets {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-top: 10vh;
   margin-left: 20vh;
   p {
@@ -26,12 +29,14 @@
   }
 }
 .choiceContent__jacket {
-  p {
-    margin-top: 4vh;
-  }
   img {
     width: 15vw;
   }
+}
+.choiceContent__choose {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .choiceContent__size {
   margin-top: 10vh;
@@ -65,5 +70,22 @@
     display: flex;
     width: 60vh;
     justify-content: space-around;
+  }
+}
+.choiceContent__buy {
+  display: flex;
+  background-color: black;
+  padding: 20px 100px;
+  width: fit-content;
+  margin-top: 15vh;
+  p {
+    font-size: 30px;
+    color: white;
+  }
+}
+.choiceContent__buy:hover {
+  background-color: white;
+  p {
+    color: black;
   }
 }
