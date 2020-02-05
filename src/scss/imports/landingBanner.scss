@@ -31,8 +31,10 @@
   letter-spacing: 0.2em;
 
   span {
-    letter-spacing: 0.3em;
-    font-size: 48px;
+    span {
+      letter-spacing: 0.3em;
+      font-size: 48px;
+    }
   }
 }
 
