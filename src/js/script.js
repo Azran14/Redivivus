@@ -32,58 +32,57 @@ function loadHTMLSection(id, query) {
   }
 }
 function getHeader() {
-  return `
-    <header>
-      <div class="headerContent">
-        <a href="index.html" class="headerLogo"></a>
-      
-        <div class="headernavDesktop">
-          <ul class="headernavDesktopItems header__menu">
-            <li><a href="#">Phénix</a></li>
-            <li>
-              <a href="#collection">Collection</a>
-            </li>
-            <li><a href="#">Matériaux</a></li>
-            <li>
-              <a href="#">Collaborations</a>
-            </li>
-            <li>
-              <a href="#">Concept</a>
-            </li>
-          </ul>
-        </div>
-        <div class="header__icons">
-          <div class="header__icon header__icon--shop"></div>
-          <div class="header__icon header__icon--user"></div>
-        </div>
+  return `  <header>
+  <div class="headerContent">
+    <a href="index.html" class="headerLogo"></a>
+  
+    <div class="headernavDesktop">
+      <ul class="headernavDesktopItems header__menu">
+        <li><a href="#">Phénix</a></li>
+        <li>
+          <a href="#collection">Collection</a>
+        </li>
+        <li><a href="#">Matériaux</a></li>
+        <li>
+          <a href="#">Collaborations</a>
+        </li>
+        <li>
+          <a href="#">Concept</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header__icons">
+      <div class="header__icon header__icon--shop"></div>
+      <div class="header__icon--user">
+        <button onclick="openForm()"></button>
       </div>
-      <!--Mobile-->
-      <div class="mobile">
-        <h1>Redivivus<span></span></h1>
-        <div>
-          <input id="burger" type="checkbox" />
+    </div>
+  </div>
+  <!--Mobile-->
+  <div class="mobile">
+    <h1>Redivivus<span></span></h1>
+    <div>
+      <input id="burger" type="checkbox" />
 
-          <label for="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
+      <label for="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-          <nav>
-            <ul>
-              <li><a href="#">Phénix</a></li>
-              <li><a href="#">Collection</a></li>
-              <li><a href="#">Matériaux</a></li>
-              <li><a href="#">Concept</a></li>
-              <li><a href="#">panier</a></li>
-              <li><a href="#">user</a></li>
-            </ul>
-        </div>
-        </nav>
-      </div>
-      <!--Mobile-->
-    </header>
-  `;
+      <nav>
+        <ul>
+          <li><a href="#">Phénix</a></li>
+          <li><a href="#">Collection</a></li>
+          <li><a href="#">Matériaux</a></li>
+          <li><a href="#">Concept</a></li>
+          <li><a href="#">panier</a></li>
+          <li><a href="#">user</a></li>
+        </ul>
+    </div>
+    </nav>
+  </div>
+</header>`;
 }
 
 // Personalisation
