@@ -14,7 +14,7 @@
   }
 }
 
-.hoverTiles__phenix {
+.hoverTiles__simi {
   width: 97vw;
   height: 65vh;
   position: relative;
@@ -23,15 +23,15 @@
   color: #eeeeee;
   transition: transform 0.5s;
 
-  .titlephenix {
+  .titlesimi {
     font-weight: bolder;
     padding-bottom: 0;
   }
-  .titlephenix--h {
+  .titlesimi--h {
     margin-left: 100px;
     display: none;
   }
-  .textphenix--h {
+  .textsimi--h {
     display: none;
   }
   img {
@@ -41,7 +41,7 @@
   .button {
     display: none;
   }
-  .hoverTiles__phenixBox {
+  .hoverTiles__simiBox {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,7 +51,7 @@
   }
 }
 // hover phénix..
-.hoverTiles__phenix:hover {
+.hoverTiles__simi:hover {
   background-color: #ab8a65;
   background-image: none;
   font-size: 45px;
@@ -64,10 +64,10 @@
     height: 65vh;
   }
 
-  .hoverTiles__phenixBox {
+  .hoverTiles__simiBox {
     display: none;
   }
-  .titlephenix--h {
+  .titlesimi--h {
     display: block;
     font-size: 34px;
   }
@@ -156,7 +156,7 @@
   justify-content: center;
 }
 //try//simi
-.hoverTiles__simi {
+.hoverTiles__phenix {
   width: 97vw;
   height: 65vh;
   position: relative;
@@ -165,15 +165,15 @@
   color: #eeeeee;
   transition: transform 0.5s;
 
-  .titlesimi {
+  .titlephenix {
     font-weight: bolder;
     padding-bottom: 0;
   }
-  .titlesimi--h {
+  .titlephenix--h {
     margin-left: 100px;
     display: none;
   }
-  .textsimi--h {
+  .textphenix--h {
     display: none;
   }
   img {
@@ -183,7 +183,7 @@
   .button {
     display: none;
   }
-  .hoverTiles__simiBox {
+  .hoverTiles__phenixBox {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -193,7 +193,7 @@
   }
 }
 
-.hoverTiles__simi:hover {
+.hoverTiles__phenix:hover {
   background-color: #000000;
   background-image: none;
   font-size: 45px;
@@ -206,10 +206,10 @@
     height: 65vh;
   }
 
-  .hoverTiles__simiBox {
+  .hoverTiles__phenixBox {
     display: none;
   }
-  .titlesimi--h {
+  .titlephenix--h {
     display: block;
     font-size: 34px;
   }
