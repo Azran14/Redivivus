@@ -88,3 +88,69 @@
     color: black;
   }
 }
+.choiceContent__color--green {
+  position: relative;
+}
+.choiceContent__color--red {
+  position: relative;
+}
+.choiceContent__color--brown {
+  position: relative;
+}
+.choiceContent__color--black {
+  position: relative;
+}
+.choiceContent__color--beige {
+  position: relative;
+}
+.choiceContent__color--darkbrown {
+  position: relative;
+}
+
+.svg {
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  position: absolute;
+  display: none;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.choiceContent__color--green:hover {
+  .svg {
+    display: block;
+  }
+}
+
+.choiceContent__color--red:hover {
+  .svg {
+    display: block;
+  }
+}
+
+.choiceContent__color--brown:hover {
+  .svg {
+    display: block;
+  }
+}
+
+.choiceContent__color--black:hover {
+  .svg {
+    display: block;
+  }
+}
+
+.choiceContent__color--beige:hover {
+  .svg {
+    display: block;
+  }
+}
+
+.choiceContent__color--darkbrown:hover {
+  .svg {
+    display: block;
+  }
+}
