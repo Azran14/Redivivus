@@ -15,10 +15,11 @@
 }
 
 .hoverTiles__simi {
+  margin-top: 20px;
   width: 97vw;
   height: 65vh;
   position: relative;
-  background-image: url("../img/simili-cuir.png");
+  background: url("../img/simili-cuir.png") no-repeat center;
   background-size: cover;
   color: #eeeeee;
   transition: transform 0.5s;
@@ -134,21 +135,6 @@
   }
 }
 
-.hoverTiles__text {
-  color: white;
-  width: 97vw;
-  height: 2vh;
-  display: flex;
-  margin-top: 1.5vh;
-  align-items: center;
-  justify-content: center;
-
-  h3 {
-    font-size: 30px;
-    font-family: "Raleway", sans-serif;
-    font-weight: bold;
-  }
-}
 .hoverTiles__textile {
   margin-top: 1.5vh;
   display: flex;
@@ -157,10 +143,11 @@
 }
 //try//simi
 .hoverTiles__phenix {
+  margin-top: 20px;
   width: 97vw;
   height: 65vh;
   position: relative;
-  background-image: url("../img/collection.png");
+  background: url("../img/collection.png") no-repeat center;
   background-size: cover;
   color: #eeeeee;
   transition: transform 0.5s;
@@ -277,10 +264,11 @@
 }
 //try//alcantara
 .hoverTiles__alcantara {
+  margin-top: 20px;
   width: 97vw;
   height: 65vh;
   position: relative;
-  background-image: url("../img/alcantara.png");
+  background: url("../img/alcantara.png") no-repeat center;
   background-size: cover;
   color: #eeeeee;
   transition: transform 0.5s;
@@ -397,10 +385,11 @@
 }
 //try//neoprene
 .hoverTiles__neoprene {
+  margin-top: 20px;
   width: 97vw;
   height: 65vh;
   position: relative;
-  background-image: url("../img/neoprene.png");
+  background: url("../img/neoprene.png") no-repeat center;
   background-size: cover;
   color: #eeeeee;
   transition: transform 0.5s;
@@ -517,10 +506,11 @@
 }
 //try//Hypalon
 .hoverTiles__hypalon {
+  margin-top: 20px;
   width: 97vw;
   height: 65vh;
   position: relative;
-  background-image: url("../img/hypalon2.png");
+  background: url("../img/hypalon2.png") no-repeat center;
   background-size: cover;
   color: #eeeeee;
   transition: transform 0.5s;
@@ -639,7 +629,7 @@
   background-color: #1e2022;
   height: 65px;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
 

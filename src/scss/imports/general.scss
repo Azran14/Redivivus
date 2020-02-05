@@ -15,6 +15,16 @@ a:active {
   text-decoration: none;
 }
 
+a:visited {
+  color: black;
+}
+
+.button:hover {
+  a {
+    color: white;
+  }
+}
+
 .button {
   button {
     position: relative;
@@ -31,7 +41,6 @@ a:active {
   button:hover {
     transform: scale(1.1);
     background-position: -60px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   }
 }
 

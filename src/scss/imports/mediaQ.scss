@@ -33,45 +33,92 @@
       font-size: 14px;
     }
   }
+  .hoverTiles {
+    div {
+      div {
+        h3 {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+  .hoverTiles {
+    div {
+      div {
+        div {
+          font-size: 12px !important;
+        }
+      }
+    }
+  }
+  .button {
+    button {
+      padding: 15px;
+    }
+  }
 }
 
 // mediaQ for mobile
 @media screen and (max-width: 720px) {
+  //header
   .mobile {
     display: flex;
   }
   .headerContent {
     display: none;
   }
+
+  // hero
+  .landingPage__phenix {
+    h1 {
+      font-size: 30px;
+      span {
+        font-size: 34px;
+      }
+    }
+  }
   .landingPage__jackets {
+    position: relative;
+    width: 80%;
+    height: 50%;
     :nth-child(1) {
       img {
-        margin-top: 200px;
+        position: absolute;
+        top: 290px;
         z-index: 4;
+        left: 0;
       }
     }
     :nth-child(2) {
       img {
-        margin-top: 125px;
+        position: absolute;
+        top: 210px;
         z-index: 3;
+        left: 26%;
       }
     }
     :nth-child(3) {
       img {
-        margin-top: 50px;
+        position: absolute;
+        top: 130px;
         z-index: 2;
+        right: 26%;
       }
     }
     :nth-child(4) {
       img {
-        margin-top: -25px;
+        position: absolute;
+        top: 50px;
         z-index: 1;
+        right: 0;
       }
     }
     p {
       display: none;
     }
   }
+
+  //hoverTiles
   .landingPage__textiles {
     p {
       color: #eeeeee;
@@ -80,6 +127,17 @@
         color: white;
         font-size: 16px;
       }
+    }
+  }
+  .hoverTiles {
+    .dispnoneM {
+      display: none;
+    }
+  }
+  //general
+  .button {
+    button {
+      padding: 10px;
     }
   }
 }
