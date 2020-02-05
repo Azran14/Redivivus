@@ -32,6 +32,15 @@ let divColors = document.querySelectorAll(".choiceContent__singleColor");
 let jacketVisible = document.querySelector(
   ".choiceContent__jackets.is-visible"
 );
+let beigeJacket = document.querySelector(".choiceContent__jackets--beige");
+let brownJacket = document.querySelector(".choiceContent__jackets--brown");
+let darkbrownJacket = document.querySelector(
+  ".choiceContent__jackets--darkbrown"
+);
+
+let redJacket = document.querySelector(".choiceContent__jackets--red");
+let blackJacket = document.querySelector(".choiceContent__jackets--black");
+let greenJacket = document.querySelector(".choiceContent__jackets--green");
 
 for (i = 0; i < divColors.length; i++) {
   let divColor = divColors[i];
@@ -45,15 +54,27 @@ for (i = 0; i < divColors.length; i++) {
     }
     // LA
     if (divColor.classList.contains("choiceContent__color--beige")) {
-      bronzeJacket.classList.add("is-visible");
+      beigeJacket.classList.add("is-visible");
     }
 
     if (divColor.classList.contains("choiceContent__color--brown")) {
-      bronzeJacket.classList.add("is-visible");
+      brownJacket.classList.add("is-visible");
     }
 
     if (divColor.classList.contains("choiceContent__color--darkbrown")) {
-      bronzeJacket.classList.add("is-visible");
+      darkbrownJacket.classList.add("is-visible");
+    }
+
+    if (divColor.classList.contains("choiceContent__color--red")) {
+      redJacket.classList.add("is-visible");
+    }
+
+    if (divColor.classList.contains("choiceContent__color--black")) {
+      blackJacket.classList.add("is-visible");
+    }
+
+    if (divColor.classList.contains("choiceContent__color--green")) {
+      greenJacket.classList.add("is-visible");
     }
     jacketVisible = document.querySelector(
       ".choiceContent__jackets.is-visible"
