@@ -5,19 +5,139 @@
   display: none;
   margin: 0;
 }
-@media screen and (max-width: 720px) {
-  .mobile {
-    display: flex;
-  }
-  .headerContent {
-    display: none;
-  }
-}
+
+// mediaQ for desktop
 @media screen and (min-width: 720px) {
   .mobile {
     display: none;
   }
   .headerContent {
     display: flex;
+  }
+}
+
+// mediaQ for in-between
+@media screen and (max-width: 1300px) {
+  // header
+  .header__menu {
+    li {
+      font-size: 8px;
+    }
+  }
+  // hero
+  .landingPage__jackets {
+    img {
+      height: 150px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .hoverTiles {
+    div {
+      div {
+        h3 {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+  .hoverTiles {
+    div {
+      div {
+        div {
+          font-size: 12px !important;
+        }
+      }
+    }
+  }
+  .button {
+    button {
+      padding: 15px;
+    }
+  }
+}
+
+// mediaQ for mobile
+@media screen and (max-width: 720px) {
+  //header
+  .mobile {
+    display: flex;
+  }
+  .headerContent {
+    display: none;
+  }
+
+  // hero
+  .landingPage__phenix {
+    h1 {
+      font-size: 30px;
+      span {
+        font-size: 34px;
+      }
+    }
+  }
+  .landingPage__jackets {
+    position: relative;
+    width: 80%;
+    height: 50%;
+    :nth-child(1) {
+      img {
+        position: absolute;
+        top: 290px;
+        z-index: 4;
+        left: 0;
+      }
+    }
+    :nth-child(2) {
+      img {
+        position: absolute;
+        top: 210px;
+        z-index: 3;
+        left: 26%;
+      }
+    }
+    :nth-child(3) {
+      img {
+        position: absolute;
+        top: 130px;
+        z-index: 2;
+        right: 26%;
+      }
+    }
+    :nth-child(4) {
+      img {
+        position: absolute;
+        top: 50px;
+        z-index: 1;
+        right: 0;
+      }
+    }
+    p {
+      display: none;
+    }
+  }
+
+  //hoverTiles
+  .landingPage__textiles {
+    p {
+      color: #eeeeee;
+      font-size: 14px;
+      span {
+        color: white;
+        font-size: 16px;
+      }
+    }
+  }
+  .hoverTiles {
+    .dispnoneM {
+      display: none;
+    }
+  }
+  //general
+  .button {
+    button {
+      padding: 10px;
+    }
   }
 }
