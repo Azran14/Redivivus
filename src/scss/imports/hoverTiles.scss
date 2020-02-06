@@ -29,29 +29,17 @@
     padding-bottom: 0;
   }
   .titlephenix--h {
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1s ease;
+    display: none;
   }
   .textphenix--h {
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1s ease;
+    display: none;
   }
   img {
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1s ease;
+    display: none;
     transform: rotateY(180deg);
   }
   .button {
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1s ease;
+    display: none;
   }
   .hoverTiles__phenixBox {
     display: flex;
@@ -80,9 +68,7 @@
     display: none;
   }
   .titlephenix--h {
-    opacity: 1;
-    visibility: visible;
-    position: static;
+    display: block;
     font-size: 50px;
     @media screen and (max-width: 1300px) {
       font-size: 42px;
@@ -106,9 +92,7 @@
   }
 
   div {
-    opacity: 1;
-    visibility: visible;
-    position: static;
+    display: block;
     font-size: 16px;
     width: 40vw;
     font-weight: thin;
@@ -133,9 +117,7 @@
   }
 
   .collectionBg {
-    opacity: 1;
-    visibility: visible;
-    position: static;
+    display: block;
     position: absolute;
     width: 48.5vw;
     height: 32.5vh;
@@ -152,9 +134,7 @@
     display: none;
   }
   .jackets {
-    opacity: 1;
-    visibility: visible;
-    position: static;
+    display: block;
     padding: 0;
     background-color: #eeeeee;
     width: 48.5vw;
@@ -168,9 +148,7 @@
     img {
       height: 175px;
       width: auto;
-      opacity: 1;
-      visibility: visible;
-      position: static;
+      display: block;
       @media screen and (max-width: 1300px) {
         height: 100px;
       }
@@ -1180,15 +1158,15 @@
     opacity: 1;
     visibility: visible;
     position: static;
-    font-size: 60px;
+    font-size: 50px;
+    padding: 20px;
   }
   .textconcept--h {
-    font-size: 30px;
-    line-height: 50px;
-    width: 900px;
-  }
-  h3 {
-    padding: 5vh;
+    font-size: 20px;
+    width: 600px;
+    span {
+      line-height: 40px;
+    }
   }
 
   div {
