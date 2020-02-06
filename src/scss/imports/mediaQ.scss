@@ -188,11 +188,60 @@
       display: none;
     }
   }
+
   .hoverTiles__phenix,
   .hoverTiles__phenix:hover {
     background: none;
     background-color: #1e2022;
+    height: 175vh;
+    position: relative;
+    overflow: hidden;
+    .jackets {
+      display: none;
+    }
+    .jacketsM {
+      background-image: url("../img/vestebg.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 100%;
+      margin: 0;
+      margin-top: 65vh;
+      padding: 0;
+      padding-bottom: 40px;
+      padding-top: 40px;
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      flex-direction: row;
+      /* .rond {
+        height: 40vh;
+        width: 40vh;
+        border-radius: 50%;
+        margin-bottom: 50px;
+      }
+      .rond--orange {
+        background-color: #9d493e;
+      }
+      .rond--brown {
+        background-color: #9e623d;
+      }
+      .rond--red {
+        background-color: #b5202c;
+      }
+      .rond--grey {
+        background-color: #4f5356;
+      } */
 
+      a {
+        img {
+          padding-top: 30px;
+          margin: 30px;
+          display: block;
+          height: 250px;
+        }
+      }
+    }
     .hoverTiles__phenixBox {
       height: 0;
     }
@@ -215,18 +264,19 @@
       .textphenix--h {
         margin: 0;
         padding: 0;
-        padding-left: 10px;
-        padding-right: 10px;
-        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 90%;
         margin-top: 35px;
         font-size: 18px;
-        line-height: 30px;
+        line-height: 40px;
         display: flex;
       }
       .button {
         padding: 10px;
         display: block;
         margin: 0;
+        margin-top: 30px;
       }
     }
   }
@@ -244,6 +294,44 @@
     }
     span {
       display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .hoverTiles__phenix,
+  .hoverTiles__phenix:hover {
+    height: 170vh;
+    .jacketsM {
+      a {
+        img {
+          margin: 10px;
+          padding-top: 10px;
+        }
+      }
+    }
+    .leftside {
+      .textphenix--h {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 14px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .hoverTiles__phenix,
+  .hoverTiles__phenix:hover {
+    height: 140vh;
+    .jacketsM {
+      a {
+        img {
+          height: 100px;
+          padding: 25px;
+        }
+      }
     }
   }
 }

@@ -9,6 +9,11 @@
 // iconClose.addEventListener("click", function() {
 //   menuMobile.classList.remove("is-visible");
 // });
+console.log(openForm);
+// Personalisation
+function openForm() {
+  document.getElementById("popup").style.display = "block";
+}
 
 document.addEventListener("DOMContentLoaded", function() {
   loadHTMLSection("header", "#headerJS");
@@ -57,9 +62,7 @@ function getHeader() {
     </div>
     <div class="header__icons">
       <div class="header__icon header__icon--shop"></div>
-      <div class="header__icon--user">
-        <button onclick="openForm()"></button>
-      </div>
+      <button class="openForm__button" onclick="openForm()"><div class="header__icon header__icon--user"></div></button>
     </div>
   </div>
   <!--Mobile-->
@@ -108,6 +111,7 @@ function getFooter() {
 }
 
 // Personalisation
+
 
 let divChoices = document.querySelectorAll(".mainContent__choice");
 
