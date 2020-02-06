@@ -112,7 +112,6 @@ function getFooter() {
 
 // Personalisation
 
-
 let divChoices = document.querySelectorAll(".mainContent__choice");
 
 for (let i = 0; i < divChoices.length; i++) {
@@ -216,3 +215,15 @@ ecrit
 ASYNCHRONOUS -- envoie reseau
 save
 */
+
+// Alert
+
+let buy = document.querySelector(".choiceContent__buy");
+
+for (i = 0; i < 1; i++) {
+  buy.addEventListener("click", function() {
+    alert(
+      "Merci pour votre acahat, c'est un petit pas pour l'homme mais un grand pas pour l'environnement ! "
+    );
+  });
+}
