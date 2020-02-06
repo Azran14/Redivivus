@@ -14,9 +14,30 @@
   .headerContent {
     display: flex;
   }
+  .hoverTiles__simiM {
+    display: none;
+  }
+  .hoverTiles__alcantaraM {
+    display: none;
+  }
+  .hoverTiles__neopreneM {
+    display: none;
+  }
+  .hoverTiles__hypalonM {
+    display: none;
+  }
 }
 
 // mediaQ for in-between
+@media screen and (min-width: 1450px) {
+  .hoverTiles__textiles {
+    .leftside {
+      h3 {
+        font-size: 40px;
+      }
+    }
+  }
+}
 @media screen and (max-width: 1300px) {
   // header
   .header__menu {
@@ -214,24 +235,6 @@
       flex-wrap: wrap;
       justify-content: space-evenly;
       flex-direction: row;
-      /* .rond {
-        height: 40vh;
-        width: 40vh;
-        border-radius: 50%;
-        margin-bottom: 50px;
-      }
-      .rond--orange {
-        background-color: #9d493e;
-      }
-      .rond--brown {
-        background-color: #9e623d;
-      }
-      .rond--red {
-        background-color: #b5202c;
-      }
-      .rond--grey {
-        background-color: #4f5356;
-      } */
 
       a {
         img {
@@ -280,6 +283,122 @@
       }
     }
   }
+  .hoverTiles__simiM {
+    background-color: #ab8a65;
+    width: 97%;
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    .titlesimi--h {
+      margin-top: 20px;
+    }
+    .textsimi--h {
+      font-size: 18px;
+      line-height: 40px;
+      color: #eeeeee;
+    }
+    .leftside {
+      text-align: center;
+    }
+    .jackets {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      img {
+        height: 280px;
+      }
+    }
+    .button {
+      margin-top: 20px;
+    }
+  }
+  .hoverTiles__alcantaraM {
+    background-color: #1f333f;
+    width: 97%;
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    .titlealcantara--h {
+      margin-top: 20px;
+    }
+    .textalcantara--h {
+      font-size: 18px;
+      line-height: 40px;
+      color: #eeeeee;
+    }
+    .leftside {
+      text-align: center;
+    }
+    .jackets {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      img {
+        height: 220px;
+      }
+    }
+    .button {
+      margin-top: 20px;
+    }
+  }
+  .hoverTiles__neopreneM {
+    background-color: #5d889d;
+    width: 97%;
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    .titleneoprene--h {
+      margin-top: 20px;
+    }
+    .textneoprene--h {
+      font-size: 18px;
+      line-height: 40px;
+      color: #eeeeee;
+    }
+    .leftside {
+      text-align: center;
+    }
+    .jackets {
+      margin-top: 30px;
+      margin-bottom: 40px;
+      img {
+        height: 220px;
+      }
+    }
+    .button {
+      margin-top: 20px;
+    }
+  }
+  .hoverTiles__hypalonM {
+    background-color: #1a2739;
+    width: 97%;
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    .titlehypalon--h {
+      margin-top: 20px;
+    }
+    .texthypalon--h {
+      font-size: 18px;
+      line-height: 40px;
+      color: #eeeeee;
+    }
+    .leftside {
+      text-align: center;
+    }
+    .jackets {
+      margin-top: 30px;
+      margin-bottom: 40px;
+      img {
+        height: 220px;
+      }
+    }
+    .button {
+      margin-top: 20px;
+    }
+  }
 
   .hoverTiles__text1 {
     h3 {
@@ -316,6 +435,34 @@
         margin-right: 10px;
         font-size: 14px;
         line-height: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hoverTiles__textiles {
+    .jackets {
+      img {
+        height: 175px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 435px) {
+  .hoverTiles__textiles {
+    .jackets {
+      img {
+        height: 150px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .hoverTiles__textiles {
+    .jackets {
+      img {
+        height: 125px;
       }
     }
   }
