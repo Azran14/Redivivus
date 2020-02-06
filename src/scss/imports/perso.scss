@@ -129,3 +129,9 @@
   height: 100%;
   background-color: #fff;
 }
+
+.mainContent__infos img:hover {
+  transform: rotateY(180deg);
+  transform: scale(1.3);
+  transition: transform 0.5s;
+}
