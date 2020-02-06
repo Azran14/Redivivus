@@ -17,6 +17,7 @@ function openForm() {
 
 document.addEventListener("DOMContentLoaded", function() {
   loadHTMLSection("header", "#headerJS");
+  loadHTMLSection("footer", "#footerJS");
   console.log("Document loaded, running init");
   //loadHTMLSection('header_mobile');
   //loadHTMLSection('footer');
@@ -29,7 +30,11 @@ function loadHTMLSection(id, query) {
         .querySelectorAll(query)
         .forEach(element => (element.innerHTML = getHeader()));
       return;
-
+    case "footer":
+      document
+        .querySelectorAll(query)
+        .forEach(element => (element.innerHTML = getFooter()));
+      return;
     default:
       console.log(`Unknown html id: ${id}`);
       return;
@@ -46,12 +51,12 @@ function getHeader() {
         <li>
           <a href="#collection">Collection</a>
         </li>
-        <li><a href="#">Matériaux</a></li>
+        <li><a href="#materiaux">Matériaux</a></li>
         <li>
-          <a href="#">Collaborations</a>
+          <a href="#collaborations">Collaborations</a>
         </li>
         <li>
-          <a href="#">Concept</a>
+          <a href="#concept">Concept</a>
         </li>
       </ul>
     </div>
@@ -86,6 +91,27 @@ function getHeader() {
   </div>
 </header>`;
 }
+
+function getFooter() {
+  return `<footer class="footer">
+  <ul>
+    <li><a href="#">Mentions légales</a></li>
+    <li><a href="#">Cookies</a></li>
+    <li><a href="#">Nous contacter</a></li>
+    <li><a href="#">Livraison & retours</a></li>
+    <li><a href="#">FAQ</a></li>
+    <li><svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="10" height="20" fill="#41479B" />
+        <rect x="10" width="10" height="20" fill="#F5F5F5" />
+        <rect x="20" width="10" height="20" fill="#FF4B55" />
+      </svg>
+    </li>
+  </ul>
+</footer>`;
+}
+
+// Personalisation
+
 
 let divChoices = document.querySelectorAll(".mainContent__choice");
 

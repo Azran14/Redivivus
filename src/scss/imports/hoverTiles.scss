@@ -67,17 +67,29 @@
     padding-bottom: 0;
   }
   .titlephenix--h {
-    display: none;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease;
   }
   .textphenix--h {
-    display: none;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease;
   }
   img {
-    display: none;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease;
     transform: rotateY(180deg);
   }
   .button {
-    display: none;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease;
   }
   .hoverTiles__phenixBox {
     display: flex;
@@ -106,7 +118,9 @@
     display: none;
   }
   .titlephenix--h {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    position: static;
     font-size: 50px;
     @media screen and (max-width: 1300px) {
       font-size: 42px;
@@ -130,7 +144,9 @@
   }
 
   div {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    position: static;
     font-size: 16px;
     width: 40vw;
     font-weight: thin;
@@ -143,6 +159,9 @@
   }
 
   .button {
+    opacity: 1;
+    visibility: visible;
+    position: static;
     position: relative;
     bottom: 0;
     button {
@@ -152,7 +171,9 @@
   }
 
   .collectionBg {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    position: static;
     position: absolute;
     width: 48.5vw;
     height: 32.5vh;
@@ -169,6 +190,9 @@
     display: none;
   }
   .jackets {
+    opacity: 1;
+    visibility: visible;
+    position: static;
     padding: 0;
     background-color: #eeeeee;
     width: 48.5vw;
@@ -182,7 +206,9 @@
     img {
       height: 175px;
       width: auto;
-      display: block;
+      opacity: 1;
+      visibility: visible;
+      position: static;
       @media screen and (max-width: 1300px) {
         height: 100px;
       }
@@ -676,3 +702,444 @@
   }
 }
 //lambo//
+.hoverTiles__lambo {
+  margin-top: 20px;
+  width: 97vw;
+  height: 65vh;
+  position: relative;
+  background: url("../img/lambo.png") no-repeat center;
+  background-size: cover;
+  color: #eeeeee;
+  transition: transform 0.5s;
+
+  .logo1 {
+    display: flex;
+    padding: 0;
+    width: 9%;
+    position: relative;
+    bottom: 50vh;
+    left: 10vw;
+  }
+  .logo4 {
+    display: flex;
+    padding: 0;
+    width: 9%;
+    position: relative;
+    bottom: 95vh;
+    left: 78vw;
+  }
+  .logo2 {
+    display: flex;
+    padding: 0;
+    width: 9%;
+    position: relative;
+    bottom: 45vh;
+    left: 45vw;
+  }
+
+  .titlelambo {
+    font-weight: bolder;
+    padding-bottom: 0;
+  }
+  .titlelambo--h {
+    display: none;
+  }
+  .titlelambo--h1 {
+    display: none;
+  }
+  .titlelambo--h2 {
+    display: none;
+  }
+  .titlelambo--h3 {
+    display: none;
+  }
+
+  .button {
+    display: none;
+  }
+  .hoverTiles__lamboBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 97vw;
+    height: 65vh;
+  }
+}
+.imginside {
+  display: none;
+}
+
+.hoverTiles__lambo:hover {
+  background-color: #000000;
+  background-image: none;
+  font-size: 45px;
+  align-items: flex-start;
+
+  .logo1 {
+    z-index: 4;
+    padding: 0;
+    width: 11%;
+    max-height: 20vh;
+    margin-left: -180px;
+    margin-top: -100px;
+    height: 200px;
+  }
+  .logo2 {
+    z-index: 4;
+
+    padding: 0;
+    width: 8%;
+    margin-left: -400px;
+    margin-top: 0px;
+    height: 150px;
+  }
+
+  .logo4 {
+    display: flex;
+    margin-left: -600px;
+    z-index: 10;
+    width: 200px;
+    height: 200px;
+    margin-top: 430px;
+  }
+
+  .leftside {
+    margin-top: 0vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 65vh;
+    margin-left: 56vw;
+
+    width: 40%;
+    margin-left: 57vw;
+    height: 60vh;
+  }
+  .imginside {
+    display: flex;
+    padding: 0;
+    width: 60%;
+    position: relative;
+    bottom: 141vh;
+    right: 768px;
+    z-index: 0;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .hoverTiles__lamboBox {
+    display: none;
+  }
+  .titlelambo--h {
+    display: flex;
+    font-size: 50px;
+    width: 710px;
+  }
+  .titlelambo--h1 {
+    display: flex;
+    font-size: 45px;
+    margin-top: 20vh;
+  }
+  .titlelambo--h2 {
+    display: flex;
+    font-size: 20px;
+    margin-top: 21vh;
+    width: 500px;
+  }
+  .titlelambo--h3 {
+    display: flex;
+    font-size: 15px;
+    max-width: max-content;
+    margin-left: 0vw;
+  }
+
+  div {
+    display: flex;
+    font-size: 16px;
+    width: 50vw;
+    font-weight: thin;
+    padding: 10px;
+    margin-left: 40vw;
+    text-align: center;
+    text-justify: distribute;
+  }
+}
+//zoodiad//
+.hoverTiles__zod {
+  margin-top: 20px;
+  width: 97vw;
+  height: 65vh;
+  position: relative;
+  background: url("../img/zodiac.png") no-repeat center;
+  background-size: cover;
+  color: #eeeeee;
+  transition: transform 0.5s;
+
+  .logo1 {
+    display: flex;
+    padding: 0;
+    width: 9%;
+    position: relative;
+    bottom: 49vh;
+    left: 10vw;
+  }
+  .logo4 {
+    display: flex;
+    padding: 0;
+    width: 9%;
+    position: relative;
+    bottom: 95vh;
+    left: 78vw;
+  }
+  .logo2 {
+    display: flex;
+    padding: 0;
+    width: 9%;
+    position: relative;
+    bottom: 50vh;
+    left: 45vw;
+  }
+
+  .titlezod {
+    font-weight: bolder;
+    padding-bottom: 0;
+  }
+  .titlezod--h {
+    display: none;
+  }
+  .titlezod--h1 {
+    display: none;
+  }
+  .titlezod--h2 {
+    display: none;
+  }
+  .titlezod--h3 {
+    display: none;
+  }
+
+  .button {
+    display: none;
+  }
+  .hoverTiles__zodBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 97vw;
+    height: 65vh;
+  }
+}
+.imginside {
+  display: none;
+}
+
+.hoverTiles__zod:hover {
+  background-color: #000000;
+  background-image: none;
+  font-size: 45px;
+  align-items: flex-start;
+
+  .logo1 {
+    z-index: 4;
+
+    padding: 0;
+    width: 11%;
+    max-height: 20vh;
+    margin-left: -180px;
+    margin-top: -120px;
+    height: 200px;
+  }
+  .logo2 {
+    z-index: 4;
+
+    padding: 0;
+    width: 8%;
+    margin-left: -400px;
+    margin-top: 0px;
+    height: 150px;
+  }
+
+  .logo4 {
+    display: flex;
+    margin-left: -600px;
+    z-index: 10;
+    width: 200px;
+    height: 200px;
+    margin-top: 470px;
+  }
+
+  .leftside {
+    margin-top: 0vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 65vh;
+    margin-left: 56vw;
+
+    width: 40%;
+    margin-left: 57vw;
+    height: 60vh;
+  }
+  .imginside {
+    display: flex;
+    padding: 0;
+    width: 60%;
+    position: relative;
+    bottom: 142.5vh;
+    right: 771px;
+    z-index: 0;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .hoverTiles__zodBox {
+    display: none;
+  }
+  .titlezod--h {
+    display: flex;
+    font-size: 50px;
+    width: 710px;
+  }
+  .titlezod--h1 {
+    display: flex;
+    font-size: 45px;
+    margin-top: 20vh;
+  }
+  .titlezod--h2 {
+    display: flex;
+    font-size: 20px;
+    margin-top: 15vh;
+    width: 500px;
+  }
+  .titlezod--h3 {
+    display: flex;
+    font-size: 15px;
+    max-width: max-content;
+    margin-left: 0vw;
+  }
+
+  div {
+    display: flex;
+    font-size: 16px;
+    width: 50vw;
+    font-weight: thin;
+    padding: 10px;
+    margin-left: 40vw;
+    text-align: center;
+    text-justify: distribute;
+  }
+}
+//CONCEPT//
+.hoverTiles__concept {
+  margin-top: 20px;
+  width: 97vw;
+  height: 65vh;
+  position: relative;
+  background: url("../img/conceptdepth.png") no-repeat center;
+  background-size: cover;
+  color: #eeeeee;
+  transition: transform 0.5s;
+
+  .titleconcept {
+    font-weight: bolder;
+    padding-bottom: 0;
+  }
+  .titleconcept--h {
+    display: none;
+  }
+  .textconcept--h {
+    display: none;
+  }
+  img {
+    display: none;
+    transform: rotateY(180deg);
+  }
+
+  .hoverTiles__conceptBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 97vw;
+    height: 65vh;
+  }
+}
+
+.hoverTiles__concept:hover {
+  background-color: #000000;
+  background-image: none;
+  font-size: 45px;
+  align-items: flex-start;
+  opacity: 90%;
+
+  .leftside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 65vh;
+  }
+
+  .hoverTiles__conceptBox {
+    display: none;
+  }
+  .titleconcept--h {
+    display: block;
+    font-size: 60px;
+  }
+  .textconcept--h {
+    font-size: 30px;
+    line-height: 50px;
+    width: 900px;
+  }
+  h3 {
+    padding: 5vh;
+  }
+
+  div {
+    display: block;
+    font-size: 16px;
+    width: 40vw;
+    font-weight: thin;
+    padding: 10px;
+    margin-left: 40px;
+    line-height: 32px;
+    flex-grow: 1;
+    text-align: center;
+    text-justify: distribute;
+  }
+
+  .conceptBg {
+    display: block;
+    position: absolute;
+    width: 48.5vw;
+    height: 32.5vh;
+    right: 0;
+    top: 0;
+  }
+
+  .conceptBg:hover {
+    opacity: 1;
+  }
+
+  .jackets {
+    padding: 0;
+    background-color: #000000;
+    width: 48.5vw;
+    height: 32.5vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img {
+      display: block;
+      transform: scaleX(1);
+    }
+  }
+}

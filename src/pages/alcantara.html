@@ -6,11 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="../scss/styles.scss" />
     <script defer src="../js/script.js"></script>
-    <link rel="icon" type="image/png" href="../img/LogoBlack.png" />
+    <link rel="icon" type="image/png" href="../img/logoblack.png" />
     <title>Personalisation</title>
   </head>
 
   <body>
+    <script>
+      function openForm() {
+        document.getElementById("popup").style.display = "block";
+      }
+    </script>
     <div id="headerJS"></div>
     <main>
       <div class="backgroundAfter">
@@ -22,20 +27,20 @@
             <div>
               <img
                 class="choiceContent__jackets choiceContent__jackets--beige is-visible"
-                src="../img/jackets/veste__alcantaraBeige.png"
+                src="../img/jackets/veste__alcantarabeige.png"
                 alt="jacket"
               />
               <img
                 class="choiceContent__jackets
                 choiceContent__jackets--brown"
-                src="../img/jackets/AlcaVestBrown.png"
+                src="../img/jackets/alcavestbrown.png"
                 alt="jacket"
               />
 
               <img
                 class="choiceContent__jackets
                 choiceContent__jackets--darkbrown"
-                src="../img/jackets/AlcaVestDarkBrown.png"
+                src="../img/jackets/alcavestdarkbrown.png"
                 alt="jacket"
               />
             </div>
@@ -115,12 +120,6 @@
         </div>
       </div>
     </main>
-    <footer>
-      <ul>
-        <li><a href="#">Nous contacter</a></li>
-        <li><a href="#">Livraison & retours</a></li>
-        <li><a href="#">FAQ</a></li>
-      </ul>
-    </footer>
+    <div id="footerJS"></div>
   </body>
 </html>

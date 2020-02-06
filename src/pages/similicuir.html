@@ -6,11 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="../scss/styles.scss" />
     <script defer src="../js/script.js"></script>
-    <link rel="icon" type="image/png" href="../img/LogoBlack.png" />
+    <link rel="icon" type="image/png" href="../img/logoblack.png" />
     <title>Personalisation</title>
   </head>
 
   <body>
+    <script>
+      function openForm() {
+        document.getElementById("popup").style.display = "block";
+      }
+    </script>
     <div id="headerJS"></div>
     <main>
       <div class="backgroundAfter">
@@ -22,13 +27,13 @@
             <div>
               <img
                 class="choiceContent__jackets choiceContent__jackets--cuir is-visible"
-                src="../img/jackets/LeatherVestBlack.png"
+                src="../img/jackets/leathervestblack.png"
                 alt="jacket"
               />
               <img
                 class="choiceContent__jackets choiceContent__jackets--none
                 choiceContent__jackets--bronze"
-                src="../img/jackets/veste__similiCuirBronze.png"
+                src="../img/jackets/veste__similicuirbronze.png"
                 alt="jacket"
               />
             </div>
@@ -49,11 +54,11 @@
               <p>COULEURS:</p>
               <div class="choiceContent__colors">
                 <div
-                  class="choiceContent__color--cuir choiceContent__singleColor"
+                  class="choiceContent__color choiceContent__color--cuir choiceContent__singleColor"
                 >
                   <img src="../img/couleur/cuir.png" alt="gray" />
                 </div>
-                <div class="choiceContent__color--green">
+                <div class="choiceContent__color choiceContent__color--green">
                   <img src="../img/couleur/green.png" alt="green" /><svg
                     class="svg"
                     width="208"
@@ -70,7 +75,7 @@
                     />
                   </svg>
                 </div>
-                <div class="choiceContent__color--brown">
+                <div class="choiceContent__color choiceContent__color--brown">
                   <img src="../img/couleur/brownalcantara.png" alt="" />
                   <svg
                     class="svg"
@@ -88,7 +93,7 @@
                     />
                   </svg>
                 </div>
-                <div class="choiceContent__color--red">
+                <div class="choiceContent__color choiceContent__color--red">
                   <img src="../img/couleur/red.png" alt="brown" />
                   <svg
                     class="svg"
@@ -107,7 +112,7 @@
                   </svg>
                 </div>
                 <div
-                  class="choiceContent__singleColor choiceContent__color--bronze"
+                  class="choiceContent__color choiceContent__singleColor choiceContent__color--bronze"
                 >
                   <img src="../img/couleur/bronze.png" alt="dark brown" />
                 </div>
@@ -120,12 +125,6 @@
         </div>
       </div>
     </main>
-    <footer>
-      <ul>
-        <li><a href="#">Nous contacter</a></li>
-        <li><a href="#">Livraison & retours</a></li>
-        <li><a href="#">FAQ</a></li>
-      </ul>
-    </footer>
+    <div id="footerJS"></div>
   </body>
 </html>
