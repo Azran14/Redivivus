@@ -9,16 +9,16 @@
 // iconClose.addEventListener("click", function() {
 //   menuMobile.classList.remove("is-visible");
 // });
-console.log(openForm);
 // Personalisation
 function openForm() {
   document.getElementById("popup").style.display = "block";
 }
-
+var unchecked;
 document.addEventListener("DOMContentLoaded", function() {
+  console.log("Document loaded, running init");
   loadHTMLSection("header", "#headerJS");
   loadHTMLSection("footer", "#footerJS");
-  console.log("Document loaded, running init");
+  uncheckBM();
   //loadHTMLSection('header_mobile');
   //loadHTMLSection('footer');
 });
@@ -79,10 +79,7 @@ function getHeader() {
 
       <nav>
         <ul>
-          <li><a href="#">Phénix</a></li>
-          <li><a href="#">Collection</a></li>
-          <li><a href="#">Matériaux</a></li>
-          <li><a href="#">Concept</a></li>
+          <li><a class="uncheckBurgerMenu" href="../index.html">Accueil</a></li>
           <li><a href="#">panier</a></li>
           <li><a href="#">user</a></li>
         </ul>
@@ -215,6 +212,18 @@ ecrit
 ASYNCHRONOUS -- envoie reseau
 save
 */
+function getUncheck() {
+  document.getElementById("burger").checked = false;
+  console.log("we did it");
+}
+
+function uncheckBM() {
+  unchecked = document.querySelectorAll(".uncheckBurgerMenu");
+  console.log("waiting4u");
+  console.log(unchecked);
+  for (var i = 0; i < unchecked.length; i++) {
+    unchecked[i].addEventListener("click", getUncheck);
+  }
 
 // Alert
 
