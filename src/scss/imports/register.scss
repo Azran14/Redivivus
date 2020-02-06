@@ -4,11 +4,15 @@
   background-color: #eeeeee;
   width: 100%;
 }
+.register__button--subscribe {
+  margin-bottom: 38%;
+}
 
 .register {
   display: flex;
-  flex-direction: row;
-  padding: 3%;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .register__log {
@@ -35,6 +39,9 @@
   }
 }
 
+.input {
+  width: 60%;
+}
 .register__reg {
   display: flex;
   width: 100%;
@@ -89,10 +96,6 @@
   .place {
     display: block;
   }
-  .register {
-    flex-direction: column;
-    padding: 50px;
-  }
   .register__reg {
     justify-content: center;
   }
@@ -113,7 +116,6 @@
   }
   .register {
     flex-direction: column;
-    padding: 50px;
   }
   .register__reg {
     width: 100%;
@@ -135,7 +137,6 @@
   }
   .register {
     flex-direction: column;
-    padding: 50px;
   }
   .register__reg {
     justify-content: center;
