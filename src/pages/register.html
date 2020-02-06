@@ -11,36 +11,90 @@
   </head>
   <body>
     <div id="headerJS"></div>
-      <main>
-        <div class="place">  
-          <div class="register">
-            <div class="register__log">
+    <main>
+      <div class="place">
+        <div class="register">
+          <div class="register__log">
+            <div class="register__text">
               <span> Nouveau Client</span>
-              <span> Créez votre compte et profitez d'avantages exclusifs :</span>
+              <span>
+                Créez votre compte et profitez d'avantages exclusifs :</span
+              >
               <ul>
-                  <li>* Commander plus vite</li>
-                  <li>* Suivre vos commandes</li>
-                  <li>* Accès aux historiques de vos achats</li>
-                  <li>* Demander un retour ou un échange</li>
+                <li>* Commander plus vite</li>
+                <li>* Suivre vos commandes</li>
+                <li>* Accès aux historiques de vos achats</li>
+                <li>* Demander un retour ou un échange</li>
               </ul>
-              <form class="form">
-                <p class="title_form">Me connecter</p>
-                <input class="input" type="email" placeholder="Email *" required/>
-                <input class="input" type="password" placeholder="Mot de passe *" required/>
-                <p class="forgot"><a href="#">Mot de passe oublié ?</p>
-                <button><a href="../index.html">Connecter</a></button>
-                <input type="checkbox" name="Rester connecter" value="connecter"> 
-                <label for="connecter">Rester connecté</label>
-              </form>
             </div>
-            <div class="register__reg"> 
+            <form class="register__form">
+              <p class="register__title">Me connecter</p>
+              <input
+                class="input"
+                type="email"
+                placeholder="Email *"
+                required
+              />
+              <input
+                class="input"
+                type="password"
+                placeholder="Mot de passe *"
+                required
+              />
+              <button class="register__button">
+                <a href="../index.html">Connecter</a>
+              </button>
+              <div class="stay">
+                <input
+                  class="register__stay"
+                  type="checkbox"
+                  name="Rester connecter"
+                  value="connecter"
+                />
+
+                <label for="connecter">Rester connecté</label>
+              </div>
+            </form>
+          </div>
+          <div class="register__content">
+            <div class="register__reg">
               <form class="register__form2">
-                <input class="input2" type="text" placeholder="Nom*" required/>
-                <input class="input2" type="text" placeholder="Prénom*" required/>
-                <input class="input2" type="email" placeholder="Email*" required/>
-                <input class="input2" type="password" placeholder="Mot de passe*" required/>
-                <input class="input2" type="date" placeholder="Date de naissance" required/>
-                <input class="input2" type="tel" placeholder="N° de téléphone (facultatif)" />
+                <p class="register__title">Créer votre compte</p>
+                <input
+                  class="register__input2"
+                  type="text"
+                  placeholder="Nom*"
+                  required
+                />
+                <input
+                  class="register__input2"
+                  type="text"
+                  placeholder="Prénom*"
+                  required
+                />
+                <input
+                  class="register__input2"
+                  type="email"
+                  placeholder="Email*"
+                  required
+                />
+                <input
+                  class="register__input2"
+                  type="password"
+                  placeholder="Mot de passe*"
+                  required
+                />
+                <input
+                  class="register__input2"
+                  type="date"
+                  placeholder="Date de naissance"
+                  required
+                />
+                <input
+                  class="register__input2"
+                  type="tel"
+                  placeholder="N° de téléphone (facultatif)"
+                />
                 <div class="register__accept">
                   <input
                     type="checkbox"
@@ -50,20 +104,22 @@
                     checked
                   />
                   <label class="accept" for="accept"
-                    >J'accepte que Redivivus me transmette des informations commerciales sur
-                    ses produits par email, sms ou téléphone. Des informations
-                    complémentaires, en particulier concernant vos droits sur vos données à
-                    caractère personnel, sont disponibles via la polit
-                    ique de
-                    confidentialité.</label
+                    >J'accepte que Redivivus me transmette des informations
+                    commerciales sur ses produits par email, sms ou téléphone.
+                    Des informations complémentaires, en particulier concernant
+                    vos droits sur vos données à caractère personnel, sont
+                    disponibles via la polit ique de confidentialité.</label
                   >
                 </div>
-                  <button class="register__button"><a href="../index.html">S'inscrire</a></button>
+                <button class="register__button">
+                  <a href="../index.html">S'inscrire</a>
+                </button>
               </form>
             </div>
           </div>
         </div>
-      </main>
-      <div id="footerJS"></div>
-    </body>
+      </div>
+    </main>
+    <div id="footerJS"></div>
+  </body>
 </html>
