@@ -67,17 +67,29 @@
     padding-bottom: 0;
   }
   .titlephenix--h {
-    display: none;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease;
   }
   .textphenix--h {
-    display: none;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease;
   }
   img {
-    display: none;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease;
     transform: rotateY(180deg);
   }
   .button {
-    display: none;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease;
   }
   .hoverTiles__phenixBox {
     display: flex;
@@ -106,7 +118,9 @@
     display: none;
   }
   .titlephenix--h {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    position: static;
     font-size: 50px;
     @media screen and (max-width: 1300px) {
       font-size: 42px;
@@ -130,7 +144,9 @@
   }
 
   div {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    position: static;
     font-size: 16px;
     width: 40vw;
     font-weight: thin;
@@ -143,6 +159,9 @@
   }
 
   .button {
+    opacity: 1;
+    visibility: visible;
+    position: static;
     position: relative;
     bottom: 0;
     button {
@@ -152,7 +171,9 @@
   }
 
   .collectionBg {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    position: static;
     position: absolute;
     width: 48.5vw;
     height: 32.5vh;
@@ -167,6 +188,9 @@
   }
 
   .jackets {
+    opacity: 1;
+    visibility: visible;
+    position: static;
     padding: 0;
     background-color: #eeeeee;
     width: 48.5vw;
@@ -180,7 +204,9 @@
     img {
       height: 175px;
       width: auto;
-      display: block;
+      opacity: 1;
+      visibility: visible;
+      position: static;
       @media screen and (max-width: 1300px) {
         height: 100px;
       }
