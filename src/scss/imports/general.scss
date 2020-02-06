@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700&display=swap");
 
-$breakpoint-tablet: 1250px;
-
 html {
-  overflow-x: hidden;
+  overflow-x: visible;
   overflow-y: scroll;
   scroll-behavior: smooth;
+  width: 100vw;
 }
 
 a:hover,
