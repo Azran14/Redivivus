@@ -42,12 +42,12 @@ function getHeader() {
         <li>
           <a href="#collection">Collection</a>
         </li>
-        <li><a href="#">Matériaux</a></li>
+        <li><a href="#materiaux">Matériaux</a></li>
         <li>
-          <a href="#">Collaborations</a>
+          <a href="#collaborations">Collaborations</a>
         </li>
         <li>
-          <a href="#">Concept</a>
+          <a href="#concept">Concept</a>
         </li>
       </ul>
     </div>
