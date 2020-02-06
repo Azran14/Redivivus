@@ -15,7 +15,58 @@
   <script>function openForm() {
       document.getElementById("popup").style.display = "block";
     }</script>
-  <div id="headerJS"></div>
+  <header>
+    <div class="headerContent">
+      <a href="index.html" class="headerLogo"></a>
+    
+      <div class="headernavDesktop">
+        <ul class="headernavDesktopItems header__menu">
+          <li><a href="#">Phénix</a></li>
+          <li>
+            <a href="#collection">Collection</a>
+          </li>
+          <li><a href="#textiles">Textiles</a></li>
+          <li>
+            <a href="#collaboration">Collaborations</a>
+          </li>
+          <li>
+            <a href="#concept">Concept</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__icons">
+        <div class="header__icon header__icon--shop"></div>
+        <div class="header__icon--user">
+          <button onclick="openForm()"></button>
+        </div>
+      </div>
+    </div>
+    <!--Mobile-->
+    <div class="mobile">
+      <h1>Redivivus<span></span></h1>
+      <div>
+        <input id="burger" type="checkbox" />
+  
+        <label for="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+  
+        <nav>
+          <ul>
+            <li><a href="#">Phénix</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#textiles">Textiles</a></li>
+            <li><a href="#collaboration">Collaborations</a></li>
+            <li><a href="#concept">Concept</a></li>
+            <li><a href="#">panier</a></li>
+            <li><a href="#">user</a></li>
+          </ul>
+      </div>
+      </nav>
+    </div>
+  </header>
   <main>
     <div class="background">
       <div class="background background--1vp">
@@ -94,7 +145,7 @@
             </div>
           </div>
           <img class="collectionBg dispnoneM" src="img/collection.png" />
-          <div class="jackets dispnoneM">
+          <div class="jackets dispnoneM" id="textiles">
             <a href="pages/similicuir.html"><img src="img/jackets/leathervestblack.png" /></a>
             <a href="pages/alcantara.html"><img src="img/jackets/alcavestbrown.png" /></a>
             <a href="pages/hypalon.html"><img src="img/jackets/hypalonvestred.png" /></a>
@@ -195,7 +246,7 @@
             <a href="pages/hypalon.html"><img src="img/jackets/hypalonvestred.png" /></a>
           </div>
         </div>
-        <div class="hoverTiles__text1">
+        <div class="hoverTiles__text1" id="collaboration">
           <h3>NOS COLLLABORATIONS</h3>
         </div>
         <div class="hoverTiles__textiles"></div>
@@ -228,7 +279,7 @@
           <div class="logo4"><img src="img/logozod.png" alt=""></div>
           <div class="imginside"><img src="img/zodiac.png" alt=""></div>
         </div>
-        <div class="hoverTiles__text1">
+        <div class="hoverTiles__text1" id="concept">
           <h3>NOTRE CONCEPT</h3>
         </div>
         <div class="hoverTiles__textiles">
