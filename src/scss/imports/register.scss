@@ -25,15 +25,16 @@
   flex-direction: column;
   align-items: center;
 }
-span:nth-child(1) {
+.new-client {
   font-size: 35px;
   line-height: 40px;
   font-weight: bold;
 }
-span:nth-child(2) {
+.new-client2 {
   font-weight: bold;
   line-height: 25px;
 }
+
 ul li {
   line-height: 30px;
 }
